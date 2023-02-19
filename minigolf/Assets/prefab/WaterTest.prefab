@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4008579112692436183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4008579112692436181}
+  - component: {fileID: 4008579112692436180}
+  - component: {fileID: 4008579112692436178}
+  - component: {fileID: 4008579112692436179}
+  m_Layer: 4
+  m_Name: WaterTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4008579112692436181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008579112692436183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4008579112692436180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008579112692436183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a11a110aa119748852225ace706af4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bound:
+    top: -1
+    right: 10
+    bottom: -5
+    left: -10
+  topCorner: {x: 1.3, y: -1}
+  bottomCorner: {x: 10, y: -5}
+  quality: 50
+  waterMaterial: {fileID: 2100000, guid: b4cde0c2709ca3f43abb938aa0ce9289, type: 2}
+  vertices: []
+  springconstant: 0.02
+  damping: 0.1
+  spread: 0.1
+  collisionVelocityFactor: 0.04
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  playerInWater: 0
+--- !u!114 &4008579112692436178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008579112692436183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6edbf63fcb4a6444fb8f0a29993f1dde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineWidth: 3
+  material: {fileID: 2100000, guid: b7f801087060fc54983253a12da63084, type: 2}
+--- !u!210 &4008579112692436179
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008579112692436183}
+  m_Enabled: 1
+  m_SortingLayerID: 89229741
+  m_SortingLayer: 3
+  m_SortingOrder: 1
